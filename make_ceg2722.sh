@@ -27,10 +27,6 @@ if [[ ! -d "~/bin" ]]; then
     mkdir ~/bin
 fi 
 
-if [[ ! -e "~/.profile" ]]
-    touch ~/.profile
-fi
-
 echo "export PATH=$PATH:~/bin/" >> ~/.profile
 echo " done..."
 echo ""
@@ -44,9 +40,7 @@ echo ""
 echo "=========================================================="
 echo ""
 echo "STEP 3: Download CEG2722 practicals\n"
-mkdir -p ~/ceg2722
-cd ~/ceg2722/
-wget https://raw.githubusercontent.com/koulali/CEG2722/main/startup/ceg2722.tar.gz
+wget https://raw.githubusercontent.com/koulali/CEG2722/main/ceg2722.tar.gz
 tar -xvzf ceg2722.tar.gz
 rm -f ceg2722.tar.gz
 cd ~/
@@ -73,5 +67,4 @@ echo ""
 echo "STEP 5: Source your profile\n"
 echo "export PS1='\h:\w\$ '" >> .profile
 source ~/.profile
-echo "That's All Folks!"                                                                                                                                                                                                                                               
-                                                                           
+echo "That's All Folks!"  
