@@ -58,6 +58,7 @@ echo " done..."
 echo "=========================================================="
 echo ""
 echo "STEP 5: Download CRX2RNX\n"
+wget https://github.com/koulali/ceg2722/raw/main/crx2rnx
 mv crx2rnx ~/bin/
 echo " done..."
 echo "=========================================================="
