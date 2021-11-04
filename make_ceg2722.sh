@@ -72,8 +72,8 @@ echo "=========================================================="
 echo ""
 echo "STEP 7: Create files for Practicals 1 and 2 \n"
 echo ""
-mkdir ~/ceg2722/practical/prac01
-mkdir ~/ceg2722/practical/prac02
+mkdir -p ~/ceg2722/practical/prac01
+mkdir -p ~/ceg2722/practical/prac02
 uname -a > ~/ceg2722/practical/.deskinfo
 for i in {001..100}; do
 	touch ~/ceg2722/practical/prac01/file${i}a.dat
