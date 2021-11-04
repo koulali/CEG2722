@@ -72,11 +72,13 @@ echo ""
 echo "STEP 7: Create files for Practical 1\n"
 echo ""
 uname -a > ~/ceg2722/practical/.deskinfo
+mkdir ~/ceg2722/practical/prac01
+mkdir ~/ceg2722/practical/prac02
 for i in {001..100}; do
 	touch ~/ceg2722/practical/prac01/file${i}a.dat
 	touch ~/ceg2722/practical/prac01/file${i}b.dat
-	echo "this is file number: "${i}" a" >> ~/ceg2722/examples/prac01/file${i}a.dat
-	echo "this is file number: "${i}" b" >> ~/ceg2722/examples/prac01/file${i}b.dat
+	echo "this is file number: "${i}" a" >> ~/ceg2722/practical/prac01/file${i}a.dat
+	echo "this is file number: "${i}" b" >> ~/ceg2722/practical/prac01/file${i}b.dat
 done
 echo "=========================================================="
 echo "" 
