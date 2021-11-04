@@ -30,23 +30,23 @@ fi
 echo ""
 echo "=========================================================="
 echo ""
-echo "STEP 2: Setup your bash profile\n"
+echo "STEP 2: clone CEG2722 \n"
+if ! [[ -x "$(command -v git)" ]]; then
+	sudo apt install git
+else
+	echo "Great, git is already here"
+fi
+git clone https://github.com/koulali/ceg2722.git
+cd ~/
+echo ""
+echo "=========================================================="
+echo ""
+echo "STEP 3: Setup your bash profile\n"
 if [[ ! -d "~/bin" ]]; then
     mkdir ~/bin
 fi 
 echo "export PATH=$PATH:~/bin/" >> ~/.bashrc
 echo " done..."
-echo ""
-echo "=========================================================="
-echo ""
-echo "STEP 3: Download CEG2722 practicals\n"
-cd ~/
-wget https://raw.githubusercontent.com/koulali/CEG2722/main/ceg2722.tar.gz
-tar -xvzf ceg2722.tar.gz
-rm -f ceg2722.tar.gz
-cd ~/
-echo " done..."
-echo ""
 echo "=========================================================="
 echo ""
 echo "STEP 4: Download TEQC\n"
@@ -58,8 +58,7 @@ echo " done..."
 echo "=========================================================="
 echo ""
 echo "STEP 5: Download CRX2RNX\n"
-wget https://github.com/koulali/ceg2722/raw/main/crx2rnx
-mv crx2rnx ~/bin/
+mv ~ceg2722/crx2rnx ~/bin/
 chmod +x ~/bin/crx2rnx
 echo " done..."
 echo "=========================================================="
@@ -68,12 +67,11 @@ echo "STEP 6: Source your profile\n"
 echo "export PS1='\h:${nuid}:\w\$ '" >> .bashrc
 echo "$USER" > ~/.userinfo
 source ~/.bashrc
+echo " done..."
 echo "=========================================================="
 echo ""
 echo "STEP 7: Create files for Practicals 1 and 2 \n"
 echo ""
-mkdir -p ~/ceg2722/practical/prac01
-mkdir -p ~/ceg2722/practical/prac02
 uname -a > ~/ceg2722/practical/.deskinfo
 for i in {001..100}; do
 	touch ~/ceg2722/practical/prac01/file${i}a.dat
