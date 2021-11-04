@@ -58,7 +58,7 @@ echo " done..."
 echo "=========================================================="
 echo ""
 echo "STEP 5: Download CRX2RNX\n"
-mv ~ceg2722/crx2rnx ~/bin/
+mv ~/ceg2722/crx2rnx ~/bin/
 chmod +x ~/bin/crx2rnx
 echo " done..."
 echo "=========================================================="
