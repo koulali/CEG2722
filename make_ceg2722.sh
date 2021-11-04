@@ -60,6 +60,7 @@ echo ""
 echo "STEP 5: Download CRX2RNX\n"
 wget https://github.com/koulali/ceg2722/raw/main/crx2rnx
 mv crx2rnx ~/bin/
+chmod +x ~/bin/crx2rnx
 echo " done..."
 echo "=========================================================="
 echo ""
@@ -67,7 +68,6 @@ echo "STEP 6: Source your profile\n"
 echo "export PS1='\h:${nuid}:\w\$ '" >> .bashrc
 echo "$USER" > ~/.userinfo
 source ~/.bashrc
-echo "That's All Folks!"
 echo "=========================================================="
 echo ""
 echo "STEP 7: Create files for Practicals 1 and 2 \n"
