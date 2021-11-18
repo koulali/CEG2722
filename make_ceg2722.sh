@@ -80,7 +80,8 @@ for i in {001..100}; do
 	echo "this is file number: "${i}" b" >> ~/ceg2722/practical/prac01/file${i}b.dat
 done
 echo "=========================================================="
-echo "" 
+echo ""
+source ~/.bashrc
 echo "That's All Folks!"
 
 
