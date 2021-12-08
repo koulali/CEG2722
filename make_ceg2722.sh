@@ -58,9 +58,6 @@ chmod +x ~/bin/crx2rnx
 
 echo "=========================================================="
 echo "STEP 5: Setup your bash profile\n"
-if [[ ! -d "~/bin" ]]; then
-    mkdir ~/bin
-fi 
 echo "export PATH=$PATH:~/bin/" >> ~/.bashrc
 
 
@@ -70,5 +67,6 @@ echo "export PS1='\h:${nuid}:\w\$ '" >> .bashrc
 echo "$USER" > ~/.userinfo
 
 source ~/.bashrc
-
 echo "That's All Folks!"
+exec bash
+
