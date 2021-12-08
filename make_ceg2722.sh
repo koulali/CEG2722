@@ -37,6 +37,9 @@ else
 	echo "Great, git is already here"
 fi
 git clone https://github.com/koulali/ceg2722.git
+cd ~/ceg2722/
+tar -xvzf ceg2722_data.tar.gz
+cd ~/
 if [[ ! -d "~/bin" ]]; then
     mkdir ~/bin
 fi 
