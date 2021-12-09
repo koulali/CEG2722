@@ -15,7 +15,7 @@ echo ""
 echo ""
 echo "=========================================================="
 echo "STEP 0: Check ID\n"
-echo -n "Enter your 5-digit ID " 
+echo -n "Enter your 9-digit Student number " 
 read nuid
 
 
