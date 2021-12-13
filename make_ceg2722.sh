@@ -36,6 +36,7 @@ if ! [[ -x "$(command -v git)" ]]; then
 else
 	echo "Great, git is already here"
 fi
+rm -rf ~/ceg2722
 git clone https://github.com/koulali/ceg2722.git
 cd ~/ceg2722/
 tar -xvzf ceg2722_data.tar.gz
